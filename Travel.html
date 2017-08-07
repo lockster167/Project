@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>                                  <!-- TAB TITLE -->
+        <meta charset="utf-8">              <!-- FORMAT OF PAGE -->
+        <title>Kevin Dai | Designer</title>
+        <link rel="stylesheet" href="css/normalize.css">    <!-- LINKED DOCUMENT IS A STYLESHEET THAT DIGS INTO CSS FILE -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Zilla+Slab:400,500" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <meta name="viewport" content="width=device-width, initial-scale: 1.0"> <!-- MOBILE LAYOUT FOR MOBILE DEVICES -->
+    </head>
+    <body>
+        <header> 
+            <a href="Project.html" id="logo">        <!-- ANCHOR TO GO BACK TO HOME PAGE -->
+                <h1>Kevin Dai</h1>                    <!-- HEADLINE -->
+                <h2>Designer</h2>
+            </a>
+            <nav>
+                <ul>                        <!-- UNORDERED LIST -->
+                    <li><a href="Project.html">Backgrounds</a></li>
+                    <li><a href="Travel.html" class="selected">Traveling</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                    <li><a href="Games.html">Games</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>                   
+            </nav>
+        </header>
+
+        <div class="wrapper2">
+            <span class="travel">
+                <img class="mySlides w3-animate-fading" alt="wow" src="img/BerlinTower.jpg">
+                <img class="mySlides w3-animate-fading" alt="wow" src="img/BerlinWall.jpg">
+                <img class="mySlides w3-animate-fading" alt="wow" src="img/KevinDai123.jpg">
+            </span>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1} 
+                x[slideIndex-1].style.display = "block"; 
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+        <footer>                            <!-- COMPLEMENT TO HEADER SOCIAL MEDIA ETC. -->
+            <a href="https://www.twitter.com/KevinDai4"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+            <a href="https://www.facebook.com/kevin.p.dai"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+            <p>&copy; 2014 Kevin Dai.</p>   <!-- COPYRIGHT -->
+        </footer>   
+    </body>
+</html>

@@ -1,0 +1,418 @@
+/*******************************
+GENERAL
+********************************/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+    max-width: 720px;
+    margin: 0% 10%;       /* SPACING OUTSIDE OF THE BORDER */   
+    padding: 0% 5%;        /* SPACING BETWEEN ELEMENTS AND BORDER */
+}
+
+a {
+    text-decoration: none; /* LINKS WILL NO LONGER HAVE UNDERLINING */
+}
+
+img {
+    max-width: 100%;
+}
+
+h3 {
+    font-size: 1em;
+    margin: -5px 0 0;       /* TOP LEFT/RIGHT BOTTOM */
+    font-weight: normal;
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+
+
+/*******************************
+HEADING
+********************************/
+
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0 0;
+    width: 100%;
+}
+
+#logo {                    /* LOGO STUFF */
+    text-align: center;
+    margin: 0%;
+}
+
+h1 {
+    font-family: 'Zilla Slab', serif;
+    margin: 15 px 0;
+    font-size: 1.75em;
+    font-weight: normal;    /* REMOVES BOLDNESS */
+    line-height: 0.8em;
+}
+
+h2 {
+    font-size: 0.75em;
+    margin: -5px 0 0;       /* TOP LEFT/RIGHT BOTTOM */
+    font-weight: normal;
+}
+
+
+
+
+/*******************************
+NAVIGATION
+********************************/
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+
+nav ul {
+    list-style: none;         /* NO BULLET POINTS */
+    margin: 0 10px;
+    padding: 0;
+}
+
+/* list items */
+nav li {
+    display: inline-block;    /* ALLOWS LIST ITEMS TO APPEAR HORIZONTALLY */
+}
+
+/* links inside navigation */
+nav a {
+    font-weight: 800;
+    padding: 15px 10px;
+}
+/* MAYBE ADD A FONT? */ 
+
+
+
+
+/*******************************
+FOOTER
+********************************/
+
+footer {
+    font-size: 0.75em;
+    position: absolute;       /* FOOTER ALWAYS ON BOTTOM */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    padding-top: 50px;
+    text-align: center;
+    clear: both;               /* RESETS FOOTER SO IT ISN'T TAKEN AS AN IMAGE */
+    color: #ccc
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+
+
+
+/*******************************
+PAGE: BACKGROUNDS
+********************************/
+
+#gallery {
+    position: absolute;        /* PUTS IMAGES IN CENTER OF PAGE */
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li {
+    float: left;                /* PUTS IMAGES SIDE BY SIDE */
+    width: 45%;                 /* IMAGES WILL ONLY TAKE 45% OF PAGE NO MATTER WHAT */
+    margin: 2.5%;               
+    background-color: #f5f5f5;
+    color: #bdc3c7;
+}
+
+#gallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 1em;
+    color: #000;
+}
+
+
+
+
+
+
+/*******************************
+PAGE: MUSIC
+********************************/
+
+#wrapper2 {
+    max-width: 1280px;
+    margin: 0% 10%;       /* SPACING OUTSIDE OF THE BORDER */   
+    padding: 0% 5%;        /* SPACING BETWEEN ELEMENTS AND BORDER */
+}
+
+nav1 a, nav1 a:visited {       /* IF USER CLICKS ON LINK COLOR DOES NOT CHANGE */
+    color: black;
+}
+
+/* selected nav link */
+nav1 a.selected, nav1 a.hover { /* NAVIGATION LINK WILL CHANGE COLOR ACCORDINGLY */
+    color: #444;
+}
+
+#scores {
+    position: absolute;
+    left: 48.5%;
+    top: 48.5%;
+}
+
+#musicgallery {
+    position: absolute;        /* PUTS IMAGES IN CENTER OF PAGE */
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: black;
+}
+
+#musicgallery li {
+    float: left;                /* PUTS IMAGES SIDE BY SIDE */
+    width: 45%;                 /* IMAGES WILL ONLY TAKE 45% OF PAGE NO MATTER WHAT */
+    margin: 2.5%;               
+    background-color: #f5f5f5;
+    border-color: black;
+    color: #bdc3c7;
+}
+
+#musicgallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 1em;
+    color: #000;
+}
+
+
+
+
+/*******************************
+PAGE: GAMES
+********************************/
+
+#wrapper3 {
+    max-width: 1280px;
+    margin: 0% 10%;       /* SPACING OUTSIDE OF THE BORDER */   
+    padding: 0% 5%;        /* SPACING BETWEEN ELEMENTS AND BORDER */
+}
+
+.league a{
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+.league li.diamond a {
+    background-image: url('../img/diamond.png');
+}
+
+.GameMusic a{
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+.GameMusic li.SSBM a {
+    background-image: url('../img/MarthHead.png');
+}
+
+.GameMusic li.Gangplank a {
+    background-image: url('../img/gangplank.png');
+}
+
+.GameMusic li.ChronoCross a {
+    background-image: url('../img/ChronoCross.jpeg');
+}
+
+.GamesCreated a{
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+.GamesCreated li.ScarletDoor a {
+    background-image: url('../img/Twine.jpeg');
+}
+
+.GamesCreated li.MemoryPuzzle a {
+    background-image: url('../img/Python.png');
+}
+
+nav2 a, nav2 a:visited {       /* IF USER CLICKS ON LINK COLOR DOES NOT CHANGE */
+    color: black;
+}
+
+/* selected nav link */
+nav2 a.selected, nav2 a.hover { /* NAVIGATION LINK WILL CHANGE COLOR ACCORDINGLY */
+    color: #444;
+}
+
+nav3 a, nav3 a:visited {       /* IF USER CLICKS ON LINK COLOR DOES NOT CHANGE */
+    color: black;
+}
+
+/* selected nav link */
+nav3 a.selected, nav3 a.hover { /* NAVIGATION LINK WILL CHANGE COLOR ACCORDINGLY */
+    color: #444;
+}
+
+.gaming > img {                  /* SPAN CLASS FOR IMAGES ON SLIDESHOW */
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 60%;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 100%; 
+}
+
+
+
+
+/*******************************
+PAGE: ABOUT
+********************************/
+
+.profile-photo {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%;         /* CIRCLE PHOTO */
+}
+
+
+
+
+/*******************************
+TRAVEL SLIDESHOW
+********************************/
+
+.travel > img {                  /* SPAN CLASS FOR IMAGES ON SLIDESHOW */
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 45%;
+    height: 90%;
+    max-width: 150px;
+    max-height: 100px;
+    border-radius: 100%; 
+}
+
+
+
+
+/*******************************
+PAGE: CONTACT
+********************************/
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-info a{
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+    background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+    background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+    background-image: url('../img/twitter.png');
+}
+
+.nujabes > img {
+    border-radius: 100%;
+}
+
+
+
+/********************************
+COLORS
+*********************************/
+
+/* site body */
+body {
+    background-color: white;
+    color: white;
+}
+
+/* black header */
+header {
+    background: black;    /* R B G */
+    border-color: white;
+}
+
+/* nav background on mobile */
+nav {
+    background: white;
+}
+
+/* logo text */
+h1, h2 {
+    color: white;
+}
+
+/* nav link */
+nav a, nav a:visited {       /* IF USER CLICKS ON LINK COLOR DOES NOT CHANGE */
+    color: white;
+}
+
+/* selected nav link */
+nav a.selected, nav a.hover { /* NAVIGATION LINK WILL CHANGE COLOR ACCORDINGLY */
+    color: #32673f;
+}
+
+
+/* ID =  #wrapperW */
+/* CLASS = a.selected */
