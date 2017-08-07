@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>                                  <!-- TAB TITLE -->
+        <meta charset="utf-8">              <!-- FORMAT OF PAGE -->
+        <title>Kevin Dai | Designer</title>
+        <link rel="stylesheet" href="css/normalize.css">    <!-- LINKED DOCUMENT IS A STYLESHEET THAT DIGS INTO CSS FILE -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Zilla+Slab:400,500" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <meta name="viewport" content="width=device-width, initial-scale: 1.0"> <!-- MOBILE LAYOUT FOR MOBILE DEVICES -->
+    </head>
+    <body>
+        <header> 
+            <a href="Index.html" id="logo">        <!-- ANCHOR TO GO BACK TO HOME PAGE -->
+                <h1>Kevin Dai</h1>                    <!-- HEADLINE -->
+                <h2>Designer</h2>
+            </a>
+            <nav>
+                <ul>                        <!-- UNORDERED LIST -->
+                    <li><a href="Index.html">Backgrounds</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                    <li><a href="Games.html" class="selected">Games</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>                   
+            </nav>
+        </header>
+        
+        <div id="wrapper3">
+            <section>
+                <p><b>League Accounts:</b></p>
+                <nav2>
+                    <ul class="league">
+                        <li class="diamond"><a href="https://na.op.gg/summoner/userName=lockster">lockster</a></li>
+                        <li class="diamond"><a href="https://na.op.gg/summoner/userName=banthehobo">banthehobo</a></li>
+                        <li class="diamond"><a href="https://na.op.gg/summoner/userName=Astyra">Astyra</a></li>
+                    </ul>
+                </nav2>
+            </section>
+            
+        <div class="wrapper4">
+            <span class="gaming">
+                <img class="mySlides w3-animate-fading" alt="wow" src="img/Bioshock%20Infinite.png">
+                <img class="mySlides w3-animate-fading" alt="wow" src="img/SuperMarioWorld.jpg">
+                <img class="mySlides w3-animate-fading" alt="wow" src="img/SSBM.jpg">
+            </span>
+            </div>
+            
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none"; 
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {slideIndex = 1} 
+                    x[slideIndex-1].style.display = "block"; 
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+            
+           <div id="wrapper4">
+            <section>
+                <p><b>Music that you might like:</b></p>
+            </section>
+                
+               <nav3>
+                <ul class="GameMusic">
+                    <li class="SSBM">
+                    <p><a href="Games3.html">SSBM - Fire Emblem</a>
+                    <audio autoplay>
+                    <source src="music/Fire%20Emblem.mp3" type="audio/ogg">
+                    <source src="music/Fire%20Emblem.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                    </p>
+                    </li>
+
+                    <li class="Gangplank">
+                    <p><a href="Games1.html">Vedrim - Saltwater Scourge</a>
+                    <audio>
+                    <source src="music/Vedrim%20-%20Bilgewater%20Suite-%20Saltwater%20Scourge.mp3" type="audio/ogg">
+                    <source src="music/Vedrim%20-%20Bilgewater%20Suite-%20Saltwater%20Scourge.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                    </p>
+                    </li>
+
+                    <li class="ChronoCross">
+                    <p><a href="Games2.html">Chrono Cross - Dream of the Shore Near Another World</a>
+                    <audio>
+                    <source src="music/Chrono%20Cross%20OST%20-%20Dreams%20of%20the%20Shore%20Near%20Another%20World.mp3" type="audio/ogg">
+                    <source src="music/Chrono%20Cross%20OST%20-%20Dreams%20of%20the%20Shore%20Near%20Another%20World.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                    </p>
+                    </li>
+               </ul>
+              </nav3>
+            </div>
+            
+            <div id="wrapper5">
+            <section>
+                <p><b>Games that I made:</b></p>
+                <nav2>
+                    <ul class="GamesCreated">
+                        <li class="ScarletDoor"><a href="Games/Scarlet%20Door.html">Scarlet Door (Need Twine)</a></li>
+                        <li class="MemoryPuzzle"><a href="Games/CompleteMemoryPuzzle.py" download>Memory Puzzle</a></li>
+                    </ul>
+                </nav2>
+            </section>
+               
+            <footer>                            <!-- COMPLEMENT TO HEADER SOCIAL MEDIA ETC. -->
+                <a href="https://www.twitter.com/KevinDai4"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+                <a href="https://www.facebook.com/kevin.p.dai"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+                <p>&copy; 2017 Kevin Dai.</p>   <!-- COPYRIGHT -->
+            </footer> 
+        </div>
+    </body>
+</html>
