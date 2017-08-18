@@ -152,6 +152,10 @@ PAGE: BACKGROUNDS
     color: #000;
 }
 
+nav3 a, nav3 a:visited {       /* IF USER CLICKS ON LINK COLOR DOES NOT CHANGE */
+    color: black;
+}
+
 
 
 
